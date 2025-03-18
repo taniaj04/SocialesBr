@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el País</title>
+    <link rel="stylesheet" href="bachillerato.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🌍 Adivina el País</h1>
+        <p class="description">Responde rápido antes de que el tiempo se acabe. ¡Buena suerte!</p>
+        <div id="game-container" style="display: none;">
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+            <p id="timer">⏳ Tiempo: <span id="time">120</span>s</p>
+            <p id="hint"></p>
+            <input type="text" id="answer" placeholder="Escribe tu respuesta aquí">
+            <button id="submit-btn" onclick="checkAnswer()">Enviar</button>
+        </div>
+        <button id="start-btn" class="btn" onclick="playStartSound()">Iniciar Juego</button>
+        <button id="restart-btn" class="btn" onclick="restartPage()" style="display: none;">Reiniciar Juego</button>
+        <button id="exit-btn" class="btn" onclick="exitGame()">Salir</button>
+        <div id="results" style="display: none;"></div>
+    </div>
+    <div id="answers-container" style="display: none;">
+        <h3>Respuestas incorrectas:</h3>
+        <ul id="answers-list"></ul>
+    </div>    
+    <script src="bachillerato.js"></script>
+</body>
+</html>

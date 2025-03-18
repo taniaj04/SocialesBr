@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌎 Sociales Bachillerato</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title-box">
+            <h1> Bienvenidos al juego de Sociales 🌎</h1>
+        </div>
+        <h3>Explora y adquiere más conocimientos respecto a la ciencia. Lee las instrucciones y elige el juego según tu nivel educativo.</h3>
+        
+        <div class="info-container">
+            <div class="info-box">
+                <h2>Juego para bachillerato</h2>
+                <p>En este juego reforzarás eso que has aprendido de algunos países del mundo.</p>
+                <p>Lo que debes hacer es adivinar el país que corresponde a la pista.</p>
+                <p>¿Listo para empezar el juego?</p>
+                <button id="boton-sonido">Empezar juego</button>
+                <audio id="sonido-boton" src="sonido.mp3"></audio>
+                <script>
+                    const boton = document.getElementById('boton-sonido');
+                    const sonido = document.getElementById('sonido-boton');
+                
+                    boton.addEventListener('click', () => {
+                        sonido.currentTime = 0; 
+                        sonido.play();
+                
+                        sonido.onended = () => {
+                            window.location.href = 'bachillerato.html';
+                        };
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
