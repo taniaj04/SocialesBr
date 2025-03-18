@@ -28,12 +28,13 @@ body {
     text-align: center;
     position: relative;
     z-index: 2;
-    animation: fadeIn 1s ease-in-out; 
-    background: rgba(173, 216, 230, 0.7); /* Azul claro con 70% de opacidad */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 20px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+    animation: fadeIn 1s ease-in-out;
+    background: rgba(37, 80, 109, 0.8); 
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 
 
 h1 {
